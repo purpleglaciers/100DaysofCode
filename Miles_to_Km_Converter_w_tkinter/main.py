@@ -18,12 +18,6 @@ def button_clicked():
 
     if conv_data.shape[0] >= 11:
         data_list.pop(10)
-# TODO 5. Create dataframe that draws from list, export to csv
-
-
-
-
-
 
 # TODO 1. Create the tkinter window and adjust size and title
 window = Tk()
@@ -36,8 +30,6 @@ window.title("Mile to Km Converter")
 calc_button = Button(text="Calculate", command=button_clicked)
 calc_button.grid(column=1, row=2)
 calc_button.config(padx=10)
-
-
 
 #TODO 3. Create 'Miles', 'is equal to', 'result', and 'Km' labels and grid them
 miles_label = Label(text="Miles")
@@ -54,18 +46,9 @@ results.grid(column=1, row=1)
 results.config(pady=10)
 
 
-
 #TODO 4. Create Miles entry and grid it
 miles_input = Entry(width=12)
 miles_input.grid(column=1, row=0)
-
-
-
-
-
-
-
-
 
 
 
