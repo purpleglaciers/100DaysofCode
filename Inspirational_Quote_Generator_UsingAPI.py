@@ -7,7 +7,6 @@ response = requests.get(url="https://type.fit/api/quotes")
 data = response.json()
 
 
-
 def get_quote():
     global data
     choice = random.choice(data)
