@@ -4,15 +4,12 @@ from tkinter import *
 
 
 response = requests.get(url="https://type.fit/api/quotes")
-
 data = response.json()
-choice = random.choice(data)
-quote = choice["text"]
-author = choice["author"]
+
 
 
 def get_quote():
-    global data, choice, quote, author
+    global data
     choice = random.choice(data)
     quote = choice["text"]
     if len(quote) < 75:
