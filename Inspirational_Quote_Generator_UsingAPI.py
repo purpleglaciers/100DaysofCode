@@ -24,7 +24,8 @@ window.title("Inspirational Quotes😌")
 window.config(height=500, width=500, background="blue", padx=20, pady=30)
 
 canvas = Canvas(height=500, width=500, background="blue", highlightthickness=0)
-quote_text = canvas.create_text(250, 250, text="Click the button bellow for inspiration!", fill="white")
+quote_text = canvas.create_text(250, 250, text="Click the button bellow for inspiration!", font=("Arial", 20, "bold"),
+                                fill="white")
 author_text = canvas.create_text(250, 285, text="", font=("Arial", 12, "italic"), fill="white")
 
 canvas.grid(row=0, column=0, columnspan=2)
